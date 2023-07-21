@@ -28,16 +28,17 @@
               </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">
-                      <a href="{% url 'main:view_student' object.pk %}"> View </a>
+{#                  <button type="button" class="btn btn-sm btn-outline-secondary">#}
+                      <a href="{% url 'main:view_student' object.pk %}"
+                         class="btn btn-sm btn-outline-secondary"> View </a>
             {#          <a href="{% url 'main:view_student' %}"> View </a>#}
                   </button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                  <a type="button" class="btn btn-sm btn-outline-secondary">
                       Edit
-                  </button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                  </a>
+                  <a type="button" class="btn btn-sm btn-outline-secondary">
                       Delete
-                  </button>
+                  </a>
                 </div>
             {#                    <small class="text-muted">9 mins</small>#}
               </div>
