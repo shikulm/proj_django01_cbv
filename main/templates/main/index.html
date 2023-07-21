@@ -2,16 +2,14 @@
 
 {% block content %}
 
- <p class="row">
-<p>
-{#     <button type="button" class="btn btn-sm btn-outline-secondary">#}
-     <div class="col-md-12" w-100>
-        <button type="button" class="btn btn-sm btn-outline-secondary">
-              add
-        </button> <br>
-     </div>
+{# <div class="row">#}
+<p class="card-text py-4">
+         <div class="col-md-12" w-100>
+            <button type="button" class="btn btn-sm btn-outline-secondary">
+                  add
+            </button>
+         </div>
  </p>
- </div>
 
 <div class="row">
     {%  for object in object_list %}
@@ -33,10 +31,10 @@
                          class="btn btn-sm btn-outline-secondary"> View </a>
             {#          <a href="{% url 'main:view_student' %}"> View </a>#}
                   </button>
-                  <a type="button" class="btn btn-sm btn-outline-secondary">
+                  <a href="#" type="button" class="btn btn-sm btn-outline-secondary">
                       Edit
                   </a>
-                  <a type="button" class="btn btn-sm btn-outline-secondary">
+                  <a href="#" type="button" class="btn btn-sm btn-outline-secondary">
                       Delete
                   </a>
                 </div>
